@@ -1,0 +1,39 @@
+.task {
+    transition: all 0.3s ease;
+    transform-origin: top;
+  }
+  
+  .task-enter {
+    opacity: 0;
+    transform: scaleY(0);
+  }
+  
+  .task-enter-active {
+    opacity: 1;
+    transform: scaleY(1);
+  }
+  
+  .task-exit {
+    opacity: 1;
+    transform: scaleY(1);
+  }
+  
+  .task-exit-active {
+    opacity: 0;
+    transform: scaleY(0);
+  }
+  
+  .dragging {
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
+    background-color: var(--primary-hover);
+  }
+  
+  @keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.05); }
+    100% { transform: scale(1); }
+  }
+  
+  .add-button:hover {
+    animation: pulse 0.5s ease;
+  }
