@@ -27,10 +27,11 @@ A fullstack task management application with React (Vite) frontend and Node.js b
 git clone https://github.com/AjayKumar23-CSE/task-manager-fullstack.git
 cd task-manager-fullstack
 
-2. Install Dependencies
+### 2. Install Dependencies
 # Frontend dependencies
 cd client
-npm install
+npm install --legacy-peer-deps
+
 
 # Backend dependencies
 cd ../server
